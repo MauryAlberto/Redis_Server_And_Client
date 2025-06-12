@@ -23,20 +23,31 @@ The server supports a range of Redis-compatible commands including string, list,
 ## Project Structure
 
 ```
-RedisClone/
+Redis_Server_And_Client/
 │
-├── Server/
-│   ├── main.cpp
-│   ├── RedisServer.cpp / RedisServer.hpp
-│   ├── RedisCommandHandler.cpp / RedisCommandHandler.hpp
-│   └── RedisDatabase.cpp / RedisDatabase.hpp
+├── Redis_Server/
+│   ├── Server/
+│   │   ├── main.cpp
+│   │   ├── RedisServer.cpp / RedisServer.hpp
+│   │   ├── RedisCommandHandler.cpp / RedisCommandHandler.hpp
+│   │   └── RedisDatabase.cpp / RedisDatabase.hpp
+│   ├── bin/
+│   ├── build/
+│   ├── Makefile
+│   └── dump.my_rdb
 │
-└── Client/
-    ├── main.cpp
-    ├── CLI.cpp / CLI.hpp
-    ├── RedisClient.cpp / RedisClient.hpp
-    ├── CommandHandler.cpp / CommandHandler.hpp
-    └── ResponseParser.cpp / ResponseParser.hpp
+├── Redis_Client/
+│   ├── Client/
+│   │   ├── main.cpp
+│   │   ├── CLI.cpp / CLI.hpp
+│   │   ├── RedisClient.cpp / RedisClient.hpp
+│   │   ├── CommandHandler.cpp / CommandHandler.hpp
+│   │   └── ResponseParser.cpp / ResponseParser.hpp
+│   ├── bin/
+│   ├── build/
+│   └── Makefile
+│
+└── README.md
 ```
 
 ---
